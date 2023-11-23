@@ -17,12 +17,10 @@ $accent: #2C697C;
 }
 
 body {
-
     background-color: $white;
     color: $black;
     overflow-x: hidden;
     margin: auto;
-
 }
 
 section {
@@ -38,6 +36,8 @@ h1 {
     font-size: 50px;
     line-height: 65px;
     text-align: center;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+
 }
 
 h2 {    
@@ -95,6 +95,7 @@ a {
     font-weight: 600;
     font-size: 12px;
     line-height: 24px;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .testimonial-container{
@@ -170,6 +171,7 @@ a {
     gap: .75em;
     justify-content: center;
     align-items: center;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .slider {
@@ -193,6 +195,7 @@ a {
     width: fit-content;
     overflow: hidden;
     padding-left :2.5em;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
 .carousel-inner {
@@ -213,6 +216,21 @@ a {
 
 #tech4coaches-02 {
     margin-right: 2.5em;
+}
+
+.active-div {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate {
+    opacity: 0;
+    transform: translateY(2em);
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 // Responsiveness settings

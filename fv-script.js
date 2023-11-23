@@ -52,5 +52,16 @@ function changeSlide(n) {
 
 changeSlide(currentSlide);
 
+const section = document.querySelectorAll('.animate');
+console.log(section);
+
+function activateSection() {
+    section.forEach( (sect, i) => {
+        sect.classList.remove('.animate');
+        sect.classList.add('animated');
+    })
+}
+
+setTimeout(activateSection, 300);
 
 
